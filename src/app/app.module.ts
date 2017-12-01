@@ -10,6 +10,7 @@ import { SectionOneComponent } from './section-one/section-one.component';
 import { SectionTwoComponent } from './section-two/section-two.component';
 import { SectionCustomerComponent } from './section-customer/section-customer.component';
 import { SectionInfoComponent } from './section-info/section-info.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SectionInfoComponent } from './section-info/section-info.component';
     SectionOneComponent,
     SectionTwoComponent,
     SectionCustomerComponent,
-    SectionInfoComponent
+    SectionInfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
