@@ -1,19 +1,28 @@
-.icon__down {
+.no-margin {
+  margin: 0;
+}
+
+.social-link {
+  text-decoration: none;
+  padding: 15px;
+}
+
+.social-bar {
+  background-color: #222;
+  margin-right: 30px !important;
+}
+
+.social-link:hover {
+  text-decoration: none;
+}
+
+.social-bar__icon {
   display: inline-block;
-  width: 0.7vw;
-  height: 0.7vw;
-  fill: currentColor;
+  width: 26px;
+  height: 26px;
+  fill: #c1c1c1;
 }
 
-.button-style {
-  background-color: #f8f8f8;
-  color: #737373;
-  border: 1px solid #737373;
-  border-radius: 0px;
-}
-
-.button-style:hover, .button-style:focus {
-  background-color: #00c8c8;
-  border-color: #00c8c8;
-  color: #f8f8f8;
+.social-bar__icon:hover {
+  fill: #ffffff;
 }
