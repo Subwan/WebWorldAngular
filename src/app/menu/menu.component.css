@@ -35,5 +35,5 @@
   width: 210px;
   border-radius: 0px;
   background-color: #ffffff !important;
-  background: url("/home/alexandr/projects/WebWorldAngular/src/assets/search.png") no-repeat 90%;
+  background: url("../../assets/search.png") no-repeat 90%;
 }
