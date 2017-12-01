@@ -1,46 +1,11 @@
 <div class="section-two">
   <div class="section-two__background-image">
     <div class="section-two__container">
-      <div class="section-two__item">
-        <img src="../assets/section2-1.png">
+      <div *ngFor="let item of items" class="section-two__item">
+        <img src={{item.src}}>
         <div class="section-two__item-text">
-          <h3 class="section-two__item-header_font-size"><b>Lorem Ipsum is simply</b></h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the</p>
-        </div>
-      </div>
-      <div class="section-two__item">
-        <img src="../assets/section2-2.png">
-        <div class="section-two__item-text">
-          <h3 class="section-two__item-header_font-size"><b>Lorem Ipsum is simply</b></h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the</p>
-        </div>
-      </div>
-      <div class="section-two__item">
-        <img src="../assets/section2-3.png">
-        <div class="section-two__item-text">
-          <h3 class="section-two__item-header_font-size"><b>Lorem Ipsum is simply</b></h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the</p>
-        </div>
-      </div>
-      <div class="section-two__item">
-        <img src="../assets/section2-4.png">
-        <div class="section-two__item-text">
-          <h3 class="section-two__item-header_font-size"><b>Lorem Ipsum is simply</b></h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the</p>
-        </div>
-      </div>
-      <div class="section-two__item">
-        <img src="../assets/section2-5.png">
-        <div class="section-two__item-text">
-          <h3 class="section-two__item-header_font-size"><b>Lorem Ipsum is simply</b></h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the</p>
-        </div>
-      </div>
-      <div class="section-two__item">
-        <img src="../assets/section2-6.png">
-        <div class="section-two__item-text">
-          <h3 class="section-two__item-header_font-size"><b>Lorem Ipsum is simply</b></h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the</p>
+          <h3 class="section-two__item-header_font-size"><b>{{item.head}}</b></h3>
+          <p>{{item.text}}</p>
         </div>
       </div>
     </div>
