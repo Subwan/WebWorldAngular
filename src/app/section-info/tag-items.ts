@@ -16,6 +16,7 @@ export const TAGITEMS: TagItem[] = [
   {text: "envato", marked: false},
   {text: "food", marked: false},
   {text: "fun", marked: false},
+  {text: "gallery", marked: false},
   {text: "gift", marked: false},
   {text: "holiday", marked: false},
   {text: "icon", marked: false},

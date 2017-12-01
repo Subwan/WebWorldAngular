@@ -8,58 +8,12 @@
         <li data-target="#banner" data-slide-to="4"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="../assets/banner.png" alt="First slide">
+        <div *ngFor="let carouselItem of carouselItems; let index = index" [class.active]="index === 0" class="item">
+          <img src={{carouselItem.src}}>
           <div class="container">
             <div class="carousel-caption">
-              <h1>WELCOM TO OUR WEB SITE</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the <br> industry's standard dummy text ever since.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="../assets/banner.png" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>WELCOM TO OUR WEB SITE</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the <br> industry's standard dummy text ever since.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="../assets/banner.png" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>WELCOM TO OUR WEB SITE</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the <br> industry's standard dummy text ever since.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="fourth-slide" src="../assets/banner.png" alt="Fourth slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>WELCOM TO OUR WEB SITE</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the <br> industry's standard dummy text ever since.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="fifth-slide" src="../assets/banner.png" alt="Fifth slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>WELCOM TO OUR WEB SITE</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the <br> industry's standard dummy text ever since.
-              </p>
+              <h1>{{carouselItem.head}}</h1>
+              <p>{{carouselItem.text}}</p>
             </div>
           </div>
         </div>
