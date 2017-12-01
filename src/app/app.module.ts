@@ -9,6 +9,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { SectionOneComponent } from './section-one/section-one.component';
 import { SectionTwoComponent } from './section-two/section-two.component';
 import { SectionCustomerComponent } from './section-customer/section-customer.component';
+import { SectionInfoComponent } from './section-info/section-info.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SectionCustomerComponent } from './section-customer/section-customer.co
     CarouselComponent,
     SectionOneComponent,
     SectionTwoComponent,
-    SectionCustomerComponent
+    SectionCustomerComponent,
+    SectionInfoComponent
   ],
   imports: [
     BrowserModule
