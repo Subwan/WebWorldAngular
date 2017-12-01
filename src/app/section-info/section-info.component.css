@@ -51,11 +51,12 @@
 
 .info__link {
   color: #c0c0c0;
+  cursor: pointer;
 }
 
 .info__link:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #00c8c8;
 }
 
 .info__h3 {
@@ -74,4 +75,8 @@
   color: #ffffff;
   font-size: 20px;
   padding: 0px;
+}
+
+.info mark:hover {
+  color: #00c8c8;
 }
