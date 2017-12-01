@@ -1,0 +1,13 @@
+.section-customer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.section-customer__container {
+  display: flex;
+  width: 1072px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}

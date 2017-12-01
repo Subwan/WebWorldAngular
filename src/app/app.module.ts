@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SectionOneComponent } from './section-one/section-one.component';
 import { SectionTwoComponent } from './section-two/section-two.component';
+import { SectionCustomerComponent } from './section-customer/section-customer.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SectionTwoComponent } from './section-two/section-two.component';
     MenuComponent,
     CarouselComponent,
     SectionOneComponent,
-    SectionTwoComponent
+    SectionTwoComponent,
+    SectionCustomerComponent
   ],
   imports: [
     BrowserModule
