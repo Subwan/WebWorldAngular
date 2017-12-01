@@ -38,3 +38,18 @@
 .section-two__item-header_font-size {
   font-size: 16px;
 }
+
+@media only screen and (max-width: 1072px) {
+  .section-two__background-image {
+    margin-top: 220px;
+  }
+  .section-two__container {
+    width: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .section-two__item {
+    width: 100%;
+  }
+}
