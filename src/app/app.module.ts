@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SectionOneComponent } from './section-one/section-one.component';
+import { SectionTwoComponent } from './section-two/section-two.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SectionOneComponent } from './section-one/section-one.component';
     HeaderComponent,
     MenuComponent,
     CarouselComponent,
-    SectionOneComponent
+    SectionOneComponent,
+    SectionTwoComponent
   ],
   imports: [
     BrowserModule
