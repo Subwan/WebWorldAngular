@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+.icon__down {
+  display: inline-block;
+  width: 0.7vw;
+  height: 0.7vw;
+  fill: currentColor;
+}
+
+.button-style {
+  background-color: #f8f8f8;
+  color: #737373;
+  border: 1px solid #737373;
+  border-radius: 0px;
+}
+
+.button-style:hover, .button-style:focus {
+  background-color: #00c8c8;
+  border-color: #00c8c8;
+  color: #f8f8f8;
+}
