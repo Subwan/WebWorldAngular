@@ -11,6 +11,9 @@ import { SectionTwoComponent } from './section-two/section-two.component';
 import { SectionCustomerComponent } from './section-customer/section-customer.component';
 import { SectionInfoComponent } from './section-info/section-info.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -23,10 +26,13 @@ import { FooterComponent } from './footer/footer.component';
     SectionTwoComponent,
     SectionCustomerComponent,
     SectionInfoComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    AboutUsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
