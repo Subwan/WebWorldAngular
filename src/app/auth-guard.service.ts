@@ -3,9 +3,11 @@ import {
   CanActivate, Router, ActivatedRouteSnapshot, RouterStateSnapshot
 } from '@angular/router';
 
+
 @Injectable()
 export class AuthGuardService implements CanActivate {
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
     let url: string = state.url;
@@ -13,8 +15,7 @@ export class AuthGuardService implements CanActivate {
   }
 
   checkLogin(url: string): boolean {
-    if (1 == 1) { return true; }
-
+    if (localStorage.getItem('isAuth') == '1') { return true; };
     return false;
   }
 
