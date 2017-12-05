@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AuthGuardService } from "./auth-guard.service";
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
