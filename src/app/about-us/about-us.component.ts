@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 declare var google: any;
+var map;
 
 @Component({
   selector: 'app-about-us',
@@ -15,7 +16,7 @@ export class AboutUsComponent implements OnInit {
 
   ngOnInit() {
     var building = {lat: 51.667242, lng: 39.195113};
-    var map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById('map'), {
       center: building,
       zoom: 15
     });
@@ -25,4 +26,11 @@ export class AboutUsComponent implements OnInit {
        });
   }
 
+  add(latitude: string, longtitude: string): void {
+    var myLatlng = new google.maps.LatLng(parseFloat(latitude),parseFloat(longtitude));
+    let marker = new google.maps.Marker({
+         position: myLatlng,
+         map: map
+       });
+  }
 }

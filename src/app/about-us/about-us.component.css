@@ -7,6 +7,27 @@
 }
 
 #map {
-  width: 40vw;
-  height: 40vw;
+  width: 400px;
+  height: 400px;
+}
+
+.section-map {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.section-map__add {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.section-map__input {
+
+}
+
+.section-map__button {
+  margin-top: 2vw;
 }
