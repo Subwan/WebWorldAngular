@@ -9,12 +9,27 @@
     magnis dis parturient montes, nascetur ridiculus mus. Sed mattis quam malesuada, lobortis nunc faucibus, molestie nibh. Suspendisse potenti. Suspendisse eleifend fringilla leo eu porta. Maecenas quis justo eu augue laoreet rhoncus non sed nisl.
   </p>
   <div class="section-map">
-    <div class="section-map__add">
-      <input type="number" class="section-map__input" placeholder="latitude" #latitude>
-
-      <input type="number" class="section-map__input" placeholder="longitude" #longitude>
-      <button type="submit" class="section-map__button" (click)="add(latitude.value, longitude.value); latitude.value=''; longitude.value=''">Add marker</button>
-    </div>
+    <form #coordsForm="ngForm" class="section-map__add">
+      <div [hidden]="coordsForm.submitted" >
+        <div class="form-group">
+          <input id="latitude" name="default.lat" type="number" class="section-map__input form-control" required [(ngModel)]="default.lat" #latitude="ngModel">
+          <div *ngIf="latitude.invalid && (latitude.dirty || latitude.touched)" class="alert alert-danger">
+            <div *ngIf="latitude.errors.required">
+              Name is required.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input id="longitude" name="default.lng" type="number" class="section-map__input form-control" required [(ngModel)]="default.lng" #longitude="ngModel">
+          <div *ngIf="longitude.invalid && (longitude.dirty || longitude.touched)" class="alert alert-danger">
+            <div *ngIf="longitude.errors.required">
+              Name is required.
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-defaulr section-map__button" [disabled]="coordsForm.invalid" (click)="add(latitude.value, longitude.value); coordsForm.resetForm({})">Add marker</button>
+      </div>
+    </form>
     <div id="map"></div>
   </div>
 </div>
