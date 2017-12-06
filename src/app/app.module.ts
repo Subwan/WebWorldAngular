@@ -15,6 +15,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AuthGuardService } from "./auth-guard.service";
+import { InputCoordComponent } from './about-us/input-coord/input-coord.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AuthGuardService } from "./auth-guard.service";
     SectionInfoComponent,
     FooterComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    InputCoordComponent
   ],
   imports: [
     BrowserModule,

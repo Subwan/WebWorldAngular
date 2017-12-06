@@ -1,0 +1,29 @@
+<div id="inputDialog" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add marker</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input id="latitude" name="default.lat" type="number" class="section-map__input" required [(ngModel)]="default.lat" #latitude="ngModel">
+        <div *ngIf="latitude.invalid && (latitude.dirty || latitude.touched)" class="alert alert-danger">
+          <div *ngIf="latitude.errors.required">
+            Latitude is required.
+          </div>
+        </div>
+        <input id="longitude" name="default.lng" type="number" class="section-map__input" required [(ngModel)]="default.lng" #longitude="ngModel">
+        <div *ngIf="longitude.invalid && (longitude.dirty || longitude.touched)" class="alert alert-danger">
+          <div *ngIf="longitude.errors.required">
+            Longitude is required.
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-defaulr" data-dismiss="modal" (click)="add(latitude.value, longitude.value); latitude.value=''; longitude.value=''">OK</button>
+      </div>
+    </div>
+  </div>
+</div>

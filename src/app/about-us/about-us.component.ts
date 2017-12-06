@@ -10,8 +10,7 @@ var map;
 })
 
 export class AboutUsComponent implements OnInit {
-
-  default = { lat: 0, lng: 0 };
+  private isVisible = false;
 
   constructor() {
   }
@@ -28,8 +27,8 @@ export class AboutUsComponent implements OnInit {
     });
   }
 
-  add(latitude: string, longtitude: string): void {
-    var myLatlng = new google.maps.LatLng(parseFloat(latitude), parseFloat(longtitude));
+  onAdd(mark: any): void {
+    var myLatlng = new google.maps.LatLng(parseFloat(mark.lat), parseFloat(mark.lng));
     let marker = new google.maps.Marker({
       position: myLatlng,
       map: map
